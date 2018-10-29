@@ -26,7 +26,7 @@ ul {
   font-size: 25px;
   display: flex;
   justify-content: space-between;
-  padding-left:0px;
+  padding-left: 0px;
 }
 
 li {
@@ -38,6 +38,11 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
+}
+
+li:hover {
+  opacity: 0.6;
 }
 
 .btn {
@@ -48,7 +53,4 @@ li {
 #description{
   margin-top: 50px;
 }
-
-
-
 

@@ -8,8 +8,8 @@ class GamesController < ApplicationController
   end
 
   def new
-    consonants = %w(B C D F G H J K L M N P Q R S T V X Z).sample(5)
-    vowels = %W(A E I O U).sample(5)
+    consonants = %w(B C D F G H J K L M N P Q R S T V X Z).sample(6)
+    vowels = %W(A E I O U).sample(4)
 
     @array_random_letters = (consonants + vowels).shuffle
 
