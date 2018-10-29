@@ -1,0 +1,30 @@
+
+<div class="wrapper">
+  <div class="container">
+
+    <h1>New Game</h1>
+
+    <ul>
+      <% @array_random_letters.each do |letter| %>
+        <li><%= letter %></li>
+      <% end %>
+    </ul>
+
+    <p id="description">What is the longest word you can find?</p>
+
+    <form action="/score" method="post" class="form">
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      <%= hidden_field_tag :array_random_letters, @array_random_letters %>
+      <%= hidden_field_tag :start_time, @start_time %>
+
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" name="word">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Play</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+

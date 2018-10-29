@@ -1,0 +1,12 @@
+
+<div class="wrapper">
+  <div class="container">
+    <h1>Result</h1>
+    <p><%= @result[:message] %></p>
+    <p>Score: <%= @result[:score] %></p>
+
+    <p>TOTAL SCORE: <%= session[:total_score]%></p>
+    <%= link_to "Play Again", new_path %>
+  </div>
+</div>
+
